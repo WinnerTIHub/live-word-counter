@@ -1,0 +1,122 @@
+*, 
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cambria, verdana, sans-serif;
+    font-size: 18px;
+    background-color: #c2c4c7;
+}
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4f5f5;
+    padding: 20px 35px 20px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.7);
+    width: 430px;
+    height: 400px;
+    display: grid;
+    place-content: center;
+}
+
+.insidestep {
+    background-color: #c2c4c7;
+    width: 340px;
+    height: 370px;
+}
+
+.insidestep:last-of-type {
+    height: 40px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    width: 280px;
+    place-self: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-8px);
+}
+
+.insidestep:first-child {
+    background-color: #f4f5f5;
+    border: 20px solid #c2c4c7;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.7);
+    overflow: none;
+    padding: 20px 30px;
+}
+
+.insidestep:first-child textarea {
+    border: none;
+    outline: none;
+    padding: 2px 3px;
+    resize: none;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transform: translate(-60%, -270%);
+    color: #c2c4c7;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.insidestep:last-child {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 900;
+    color: #c2c4c7;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+#labels {
+    color: #000;
+    position: absolute;
+    bottom: 20%;
+    left: 19%;
+    transform: translate(135px, -38px);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+    font-size: 0.8rem;
+}
+
+#footer {
+    width: 350px;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+}
+
+@media (min-width: 800px) {
+    #footer {
+        left: 40%;
+        max-width: 400px;
+    }
+
+    #labels {
+        left: 38%;
+        max-width: 400px;
+    }
+
+    h1 {
+        left: 53%;
+        max-width: 400px;
+    }
+}
