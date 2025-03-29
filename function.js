@@ -19,3 +19,7 @@ function wordCountChar() {
 }
 
 textArea.addEventListener("input", wordCountChar);
+
+const footer = document.createElement("div");
+footer.innerText = `© 2025 WinnerTIHub. made by WinnerTIHub`;
+footer.classList.add("copyright");document.body.appendChild(footer);
