@@ -19,8 +19,3 @@ function wordCountChar() {
 }
 
 textArea.addEventListener("input", wordCountChar);
-
-document.addEventListener("DOMContentLoaded", () => {
-    alert("I've optimized this practice work for just 1300px precise and 600px screen size");
-    alert("make sure your screen is set to either sizes to enjoy it fully");
-})
